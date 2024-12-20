@@ -1,0 +1,135 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente y color de fondo */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/* Fondo del sitio */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(135deg, #56d191, #2f4f6f);
+}
+
+
+
+/* Estilo de la timeline */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #56c6d1;
+    transform: translateX(-50%);
+}
+
+/* Estilo de cada evento de la timeline */
+.timeline-event {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.timeline-event:nth-child(odd) {
+    align-items: flex-start;
+}
+
+.timeline-event:nth-child(even) {
+    align-items: flex-end;
+}
+
+.timeline-event .dot {
+    width: 30px;
+    height: 30px;
+    background: #56c6d1;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-event .content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.timeline-event .content:hover {
+    transform: translateY(-8px);
+}
+
+.timeline-event h4 {
+    font-size: 1.8rem;
+    color: #2f4f6f;
+    margin-bottom: 0.8rem;
+}
+
+.timeline-event p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-event a {
+    color: #56c6d1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.timeline-event a:hover {
+    text-decoration: underline;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: #555;
+    font-size: 1rem;
+}
