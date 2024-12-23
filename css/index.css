@@ -14,7 +14,6 @@ body {
     font-size: 16px;
     overflow-x: hidden;
 }
-
 /* Fondo del sitio */
 .background {
     position: fixed;
@@ -23,7 +22,10 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(135deg, #56d191, #2f4f6f);
+    background: linear-gradient(135deg, #2a563f7f, #2f4f6f77), 
+                url("../img/pngwing.com.png") no-repeat center center;
+    background-size: cover;
+
 }
 
 
