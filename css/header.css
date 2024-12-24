@@ -1,6 +1,5 @@
-/* Estilo del header */
-header {
-    padding: .2rem 2rem;
+ .custom-header {
+    padding: 0.2rem 2rem;
     background-color: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -13,7 +12,7 @@ header {
     z-index: 1000;
 }
 
-header .logo {
+.custom-header .logo {
     font-size: 2.5rem;
     font-weight: 600;
     color: #2f4f6f;
@@ -21,12 +20,12 @@ header .logo {
     letter-spacing: 1px;
 }
 
-header nav {
+.custom-header nav {
     display: flex;
     gap: 2rem;
 }
 
-header nav a {
+.custom-header a {
     font-size: 1.1rem;
     color: #2f4f6f;
     text-decoration: none;
@@ -34,24 +33,17 @@ header nav a {
     transition: color 0.3s ease;
 }
 
-header nav a:hover {
+.custom-header nav a:hover {
     color: #56c6d1;
 }
 
-/* Estilo para el menú desplegable */
 .dropdown {
     position: relative;
 }
 
-/* General para navegación */
 nav {
     display: flex;
     gap: 1rem;
-}
-
-/* Dropdown principal */
-.dropdown {
-    position: relative;
 }
 
 .dropdown-content {
@@ -70,24 +62,25 @@ nav {
     padding: 10px;
 }
 
-/* Mostrar el menú principal al pasar el ratón */
-.dropdown:hover > .dropdown-content {
+.dropdown:hover>.dropdown-content {
     display: block;
 }
 
-/* Submenú de "Práctica 9" */
 .dropdown-content .dropdown {
     position: relative;
 }
 
 .dropdown-content .dropdown-content {
-    display: none; /* Ocultarlo por defecto */
+    display: none;
+    /* Ocultar por defecto */
     top: 0;
-    left: -100%; /* Posicionarlo a la derecha del padre */
+    left: -100%;
+    /* Posicionar a la izquierda del padre */
     background-color: #f0f0f0;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.dropdown-content .dropdown:hover > .dropdown-content {
-    display: block; /* Mostrarlo al pasar por "Práctica 9" */
+.dropdown-content .dropdown:hover>.dropdown-content {
+    display: block;
+    /* Mostrar submenú al pasar el ratón */
 }

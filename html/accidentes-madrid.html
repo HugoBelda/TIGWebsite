@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accidentes Madrid </title>
+    <link rel="stylesheet" href="../css/header.css">
     <style>
         /* Reset de estilos */
         * {
@@ -22,137 +23,18 @@
             font-size: 16px;
             overflow-x: hidden;
         }
-
-        /* Mapa */
-        #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-        }
-
-        /* Header personalizado */
-        .custom-header {
-            padding: 0.2rem 2rem;
-            background-color: #ffffff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        .custom-header .logo {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #2f4f6f;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .custom-header nav {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .custom-header a {
-            font-size: 1.1rem;
-            color: #2f4f6f;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .custom-header nav a:hover {
-            color: #56c6d1;
-        }
-
-        /* Menú desplegable */
-        .dropdown {
-            position: relative;
-        }
-
-        nav {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            text-decoration: none;
-            display: block;
-            padding: 10px;
-        }
-
-        /* Mostrar menú principal al pasar el ratón */
-        .dropdown:hover>.dropdown-content {
-            display: block;
-        }
-
-        /* Submenú dentro del dropdown */
-        .dropdown-content .dropdown {
-            position: relative;
-        }
-
-        .dropdown-content .dropdown-content {
-            display: none;
-            /* Ocultar por defecto */
-            top: 0;
-            left: -100%;
-            /* Posicionar a la izquierda del padre */
-            background-color: #f0f0f0;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .dropdown-content .dropdown:hover>.dropdown-content {
-            display: block;
-            /* Mostrar submenú al pasar el ratón */
-        }
-
         .background {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: linear-gradient(135deg, #2a563f7f, #2f4f6f77),
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(10deg, #fafafa7f, #607d8b69), 
                 url("../img/pngwing.com.png") no-repeat center center;
-            background-size: cover;
+    background-size: cover;
 
         }
-    </style>
-
-    <script>
-        L_NO_TOUCH = false;
-        L_DISABLE_3D = false;
-    </script>
-
-
-    <style>
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
-    <style>
         #map-container {
             width: 80%;
             height: 98%;
@@ -172,7 +54,19 @@
         #map_d33fdf7a63eab11b0ffe0764de804408 {
             border-radius: 20px;
         }
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
     </style>
+
+    <script>
+        L_NO_TOUCH = false;
+        L_DISABLE_3D = false;
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

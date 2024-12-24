@@ -22,7 +22,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(135deg, #2a563f7f, #2f4f6f77), 
+    background: linear-gradient(10deg, #fafafa7f, #607d8b69), 
                 url("../img/pngwing.com.png") no-repeat center center;
     background-size: cover;
 
@@ -45,7 +45,7 @@ body {
     top: 0;
     width: 4px;
     height: 100%;
-    background: #56c6d1;
+    background: #3d3868;
     transform: translateX(-50%);
 }
 
