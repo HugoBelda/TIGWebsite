@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link href="css/header.css" rel="stylesheet">
 
 </head>
+
 <body>
     <header class="custom-header">
         <!-- Logo -->
@@ -21,8 +23,13 @@
                 <a href="#">Prácticas</a>
                 <div class="dropdown-content">
                     <a href="#">Práctica 1</a>
-                    <a href="#">Práctica 3</a>
-                    <a href="#">Práctica 4</a>
+                    <div class="dropdown">
+                        <a href="#">Práctica 3</a>
+                        <div class="dropdown-content">
+                            <a href="media/MAPA_TEMPERATURAS.pdf" target="_blank">Temperaturas</a>
+                            <a href="media/ESTACIONES.pdf" target="_blank">Precipitaciones</a>
+                        </div>
+                    </div> <a href="#">Práctica 4</a>
                     <a href="#">Práctica 7</a>
                     <div class="dropdown">
                         <a href="#">Práctica 8</a>
@@ -39,8 +46,8 @@
         </nav>
 
     </header>
-        
-        <div class="background"></div>
+
+    <div class="background"></div>
     <!-- Línea de tiempo -->
     <main>
         <div class="timeline">
@@ -55,7 +62,10 @@
                 <div class="dot"></div>
                 <div class="content">
                     <h4>Práctica 3</h4>
-                    <p>Combining image datasets with geospatial tools. <a href="#">View Gallery</a></p>
+                    <p>En este practica se pueden ver dos mapas en formato pdf. <br> <a
+                            href="media/MAPA_TEMPERATURAS.pdf" target="_blank">Abrir Temperaturas</a> <br>
+                        <a href="media/ESTACIONES.pdf" target="_blank">Abrir Precipitaciones</a>
+                    </p>
                 </div>
             </div>
             <div class="timeline-event">
@@ -76,7 +86,9 @@
                 <div class="dot"></div>
                 <div class="content">
                     <h4>Práctica 8</h4>
-                    <p>Mpas en formato html de accidents y contenedores en Madrid. <a href="html/accidentes-madrid.html">Ver Accidentes</a> <a href="html/contenedores-madrid.html">Ver Contenedores</a></p>
+                    <p>Mpas en formato html de accidents y contenedores en Madrid. <a
+                            href="html/accidentes-madrid.html">Ver Accidentes</a> <a
+                            href="html/contenedores-madrid.html">Ver Contenedores</a></p>
                 </div>
             </div>
             <div class="timeline-event">
@@ -102,4 +114,5 @@
     </footer>
 
 </body>
+
 </html>
